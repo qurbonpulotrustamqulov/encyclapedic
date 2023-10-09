@@ -28,6 +28,7 @@ class SliverSearchAppBar extends SliverPersistentHeaderDelegate {
           top: (topPadding + offset) * 0.8,
           left: 16,
           right: 16,
+
           child: SizedBox(
               height: 50,
               child: GestureDetector(
