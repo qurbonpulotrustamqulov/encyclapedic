@@ -1,0 +1,35 @@
+name: ensyclopedic
+description: "A new Flutter project for Portfolio"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0-191.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  easy_localization: ^3.0.3
+  youtube_player_flutter: ^8.1.2
+  card_swiper: ^3.0.1
+  url_launcher: ^6.1.14
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/languages/
+    - assets/images/app_bar_background/
+
+
+
