@@ -5,12 +5,10 @@ import 'package:flutter/services.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Detail extends StatefulWidget {
-  // final List<String> videoUrlList;
   final Information information;
 
   const Detail(
       {
-      //required this.videoUrlList,
       required this.information,
       Key? key})
       : super(key: key);
@@ -150,9 +148,6 @@ class DetailState extends State<Detail> {
                                         ProgressBar(isExpanded: true),
                                         FullScreenButton(),
                                       ],
-                                      onReady: () {
-                                        //   print('onReady for $index');
-                                      },
                                       onEnded: (YoutubeMetaData md) {
                                         ytController
                                             .seekTo(const Duration(seconds: 0));
@@ -172,12 +167,12 @@ class DetailState extends State<Detail> {
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       const SizedBox(
-                                        width: 10,
+                                        width: 10
                                       ),
                                       Text(
                                         curState,
                                         style: const TextStyle(
-                                            color: Colors.white),
+                                            color: Colors.white)
                                       ),
                                     ],
                                   ),
@@ -186,10 +181,10 @@ class DetailState extends State<Detail> {
                             ),
                           ),
                           const SizedBox(
-                            height: 50,
+                            height: 50
                           ),
                           const Divider(
-                            thickness: 3,
+                            thickness: 3
                           ),
                           Text(
                             widget.information.about,
