@@ -75,3 +75,5 @@ class SliverSearchAppBar extends SliverPersistentHeaderDelegate {
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) =>
       oldDelegate.maxExtent != maxExtent || oldDelegate.minExtent != minExtent;
 }
+
+
